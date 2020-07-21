@@ -61,12 +61,30 @@
        <section class="portfolio"> 
            <div class="container">
             <nav>
-                <ul class="filters-list ">
-                    <li class="filters-items"><button type="button" class="button button-secondary">Все</button></li>
-                    <li class="filters-items"><button type="button" class="button button-secondary">Веб-сайты</button></li>
-                    <li class="filters-items"><button type="button" class="button button-secondary">Дизайн</button></li>
-                    <li class="filters-items"><button type="button" class="button button-secondary">Маркетинг</button></li>
-                </ul>
+                <form>
+                  <div role="group">
+                    <ul class="filters-list">
+                        <li class="filters-items">
+                            <input type="radio" class="filters-input" name="filters" value="" id="all" checked/>
+                            <label class="filters-label" for= "all" class="">Все</label>
+                        </li>
+                        <li class="filters-items">
+                            <input type="radio" class="filters-input" name="filters" value="websites" id="websites"/>
+                            <label for= "websites" class="">Веб-сайты</label>
+                        </li>
+
+                    <li class="filters-items">
+                        <input type="radio" class="filters-input" name="filters" value="design" id="design"/>
+                        <label for= "design" class="">Дизайн</label>
+                    </li>
+                    <li class="filters-items">
+                        <input type="radio" class="filters-input" name="filters" value="marketing" id="marketing"/>
+                        <label for= "marketing" class="">Маркетинг</label>
+                    </li>
+    
+                    </ul>
+                  </div>
+                </form>
             </nav>
             <h1 class="is-hidden"> The exaples of our projects </h1>
             <ul class="works list">
