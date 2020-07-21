@@ -371,7 +371,7 @@
             <address class="address">
                 <ul class="address-list list">
                     <li class="address-item">г. Киев, пр-т Леси Украинки, 26</li>
-                    <li class="address-item"> <a class="address-link" href="mailto:info@example.com">info@example.com</a>
+                    <li class="address-item"><a class="address-link" href="mailto:info@example.com">info@example.com</a>
                     </li>                    
                     <li class="address-item"><a class="address-link" href="tel:+38-096-111-11-11">+38 096 111 11 11</a></li>
                 </ul>  
@@ -411,7 +411,34 @@
                 </li>
              </ul>
          </div>         
-     
+
+
+
+
+        <!---subscription-->
+            <div class="footer-list">
+                    <b class="footer-subtitle">Подпишитесь на рассылку</b>
+                    <form class="footer-subscription" autocomplete="off">
+                        <label class="footer-label">
+                            <input class="footer-input" type="email" name="email" placeholder="E-mail">
+                        </label>
+                        
+                        <button type="submit" class="button button-primary">Подписаться
+                            <svg class="icon-send">
+                                <use href=./images/sprite.svg#icon-icon_send></use> 
+                            </svg>
+                        </button>
+                        
+                    </form>
+                    
+            </div>
+               
+        </div>
+
+        <p class="footer-copyright">2020 | Developed by GoIT Students </p>
+    </div>
+    </footer>  
+         
         <!-- modal window -->
         <div class="backdrop is-hidden" data-modal>  
             <div class="modal">
@@ -449,7 +476,7 @@
                             </li>
                     
                         <li  class="checkbox-form">
-                        <input class="checkbox" type="checkbox"  name="agreement" value="agreement" id="agreement" placeholder=" ">
+                        <input class="checkbox" type="checkbox"  name="agreement" value="agreement" id="agreement">
                             <label for="agreement" class="checkbox-label">Соглашаюсь с рассылкой и принимаю  
                                 <a class="agreement-conditions" href="#"> Условия договора</a></label>
                         </li>
@@ -459,32 +486,6 @@
             </div>
         </div>
 
-
-
-
-        <!---subscription-->
-        <div class="footer-list">
-                <b class="footer-subtitle">Подпишитесь на рассылку</b>
-                <form class="footer-subscription" autocomplete="off">
-                    <label class="footer-label">
-                        <input class="footer-input" type="email" name="email" placeholder="E-mail">
-                    </label>
-                    
-                    <button type="submit" class="button button-primary">Подписаться
-                        <svg class="icon-send">
-                            <use href=./images/sprite.svg#icon-icon_send></use> 
-                        </svg>
-                    </button>
-                    
-                </form>
-                
-        </div>
-               
-        </div>
-
-        <p class="footer-copyright">2020 | Developed by GoIT Students </p>
-    </div>
-    </footer>  
     
     <script src="./js/modal.js"></script>
 
