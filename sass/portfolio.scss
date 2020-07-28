@@ -12,24 +12,18 @@
 
 // Components
 
-@import "./components/common/general";
+@import './components/common/general';
+@import './components/portfolio/page';
+@import './components/common/header';
+@import './components/common/logo';
+@import './components/portfolio/filters';
+@import './components/portfolio/works';
 
-@import "./components/header";
-@import './components/logo';
-@import './components/hero';
-@import './components/button';
-@import './components/common/sectionStyles';
-@import './components/features';
-@import './components/products';
-@import './components/team';
+@import './components/common/button';
 @import './components/common/socialicons';
-@import './components/clients';
-@import './components/footer';
-@import './components/logo';
-@import './components/common/socialicons';
+@import './components/common/footer';
 
 
-@import './components/backdrop';
 
 
 

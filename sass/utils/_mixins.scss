@@ -1,6 +1,25 @@
-@mixin centeredFlex ($type: flex) {
-    display: $type;
-    align-items: center;
-    justify-content: center;
+@mixin centeredFlex ($display: flex, $align-items: center, $justify-content: center) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
     
 }
+
+
+
+@mixin bordered($color) {
+    border: 1px solid $color;
+    border-top: 1px solid $color;
+    border-bottom: 1px solid $color;
+  }
+
+@mixin transition ($type) {
+    $animation-duration: 250ms;
+    $animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+@mixin font ($weight, $size, $height, $space) {
+    
+}
+

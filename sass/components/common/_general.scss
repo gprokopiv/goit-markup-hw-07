@@ -1,16 +1,17 @@
-
-
-.home-page {
-
-    margin: 0;
-    padding-top: 80px;
-    
+.page {
     color: $primary-text-color; 
     font-family: $font-text;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+}
+
+.home-page {
+
+    margin: 0;
+    padding-top: 80px;
+        
 }
 
 
@@ -46,3 +47,4 @@ img {
  button:hover {
     cursor: pointer;
 } 
+
