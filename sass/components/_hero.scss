@@ -14,23 +14,25 @@
     background-size: cover;
     background-color: $secondary-text-color;
 
-}
-
-/* hero title */
-.hero-content {
-    text-align: center;
-    color: $title-text-color;
-    letter-spacing: 0.06em;
 
 
-}
-.hero-title {
-    margin-top: 0;
-    margin-bottom: 30px;
+    &-content {
+        text-align: center;
+        color: $title-text-color;
+        letter-spacing: 0.06em;
     
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    text-transform: uppercase;
-}
     
+    }
+    
+    &-title {
+        margin-top: 0;
+        margin-bottom: 30px;
+        
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.4;
+        text-transform: uppercase;
+    }
+        
+}
+

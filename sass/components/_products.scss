@@ -1,4 +1,5 @@
-.products .container {
+.products {
+    @extend %container;
     padding-bottom: 94px;
 }
 

@@ -1,26 +1,29 @@
-.features .container {
+.features {
+    @extend %container;
     padding-top: 94px;
     padding-bottom: 94px;
+
+    &-label {
+        padding: 25px 100px;
+        margin-bottom: 30px;
+     
+    
+         background-color: $secondary-background-color;
+         border-radius: 4px;
+    }   
+    &-icon {
+        width: 70px;
+        height: 70px;
+    }
+    &-descriptions {
+        margin: 10px 0 10px 0;
+        color: $secondary-text-color;
+    }
+
 }
 
 .features .is-hidden,
 .portfolio .is-hidden {
     display: none;
 
-}
-.features-label {
-    padding: 25px 100px;
-    margin-bottom: 30px;
- 
-
-     background-color: $secondary-background-color;
-     border-radius: 4px;
-}   
-.features-icon {
-    width: 70px;
-    height: 70px;
-}
-.features-descriptions {
-    margin: 10px 0 10px 0;
-    color: $secondary-text-color;
 }

@@ -1,26 +1,34 @@
+// Base
+
+
+@import './base/normalize';
+
+// utils
+
 @import './utils/variables';
 @import './utils/placeholders';
 @import './utils/is-hidden';
 @import './utils/mixins';
 
-@import './base/normalize';
+// Components
 
-@import './components/header';
+@import "./components/common/general";
 
+@import "./components/header";
 @import './components/logo';
 @import './components/hero';
 @import './components/button';
-@import './components/commun/sectionStyles';
-@import './components/logo';
+@import './components/common/sectionStyles';
 @import './components/features';
 @import './components/products';
-@import './components/logo';
 @import './components/team';
-@import './components/logo';
-@import './components/commun/socialicons';
-@import './components/logo';
+@import './components/common/socialicons';
 @import './components/clients';
 @import './components/footer';
+@import './components/logo';
+@import './components/common/socialicons';
+
+
 @import './components/backdrop';
 
 

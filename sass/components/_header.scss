@@ -10,7 +10,7 @@
 } 
 
    
-.header .container {
+.header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,14 +95,15 @@
 
 /* email and address */
 
-
- .contact-item:not(:last-child) {
-     margin-right: 20px;
- }
  .contact-item {
     fill: $secondary-text-color; 
 
+    &:not(:last-child) {
+        margin-right: 20px;
+    }
  }
+ 
+
  .contact-icon {
     vertical-align: bottom;
     margin-right: 10px;  

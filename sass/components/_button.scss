@@ -1,11 +1,6 @@
-.button {
-    
-    font-size: 16px;
-    display: inline-block;
-}
 
 .button-primary {
-
+    @extend %button;
    border: 1px solid $accent-color;
    padding: 10px 32px;
    
