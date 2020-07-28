@@ -1,0 +1,27 @@
+.section-title {
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+.section-subtitle {
+    margin: 0;
+    padding: 0;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+}
+
+.section-list {
+    display: flex;
+}
+
+.section-item:not(:last-child) {
+    margin-right: 30px;
+}

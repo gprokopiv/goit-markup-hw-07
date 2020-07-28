@@ -1,0 +1,15 @@
+.social-icon {
+    width: 20px;
+    height: 20px;
+    fill: $additional-link-color;
+
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    fill: $title-text-color;
+} 
+
+.social-link:hover,
+.social-link:focus   {
+    background-color: $accent-color;
+} 

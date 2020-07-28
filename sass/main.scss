@@ -1,13 +1,91 @@
+
+@import './base/normalize';
+
 @import './utils/variables';
 @import './utils/placeholders';
 @import './utils/is-hidden';
 @import './utils/mixins';
 
-@import './base/normalize';
+@import "./components/header";
 
-@import './components/page-header';
+@import './components/header';
 
-.features {
-    @extend %list;
+@import './components/logo';
+@import './components/hero';
+@import './components/button';
+@import './components/commun/sectionStyles';
+@import './components/features';
+@import './components/products';
+@import './components/team';
+@import './components/commun/socialicons';
+@import './components/clients';
+@import './components/footer';
+@import './components/logo';
+@import './components/commun/socialicons';
+
+
+@import './components/backdrop';
+
+
+
+
+.home-page {
+
+    margin: 0;
+    padding-top: 80px;
+    
+    color: $primary-text-color; 
+    font-family: $font-text;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
 }
+
+
+   
+.container {
+    /* outline: solid tomato;      */
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1200px;
+}
+/* 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}   */
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+/* .link {
+    text-decoration: none;
+    /* color: var(--primary-text-color );
+}  */
+
+
+ a:hover,
+ button:hover {
+    cursor: pointer;
+} 
+
+
+
+
+
+
+
+
+
+
+// .features {
+//     @extend %list;
+// }
 
