@@ -1,7 +1,11 @@
 .features {
-    @extend %container;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    & .container {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    // @extend %container;
+    // @extend %paddings94;
+
 
     &-label {
         padding: 25px 100px;

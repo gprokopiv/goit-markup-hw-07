@@ -12,10 +12,20 @@
 //     list-style: none;
 // }
 
+
 %button {
     
     font-size: 16px;
-    display: inline-block;
+     display: inline-block;
+    }
+
+%transition {
+    animation-duration: $animation-duration;
+    animation-timing-function: $animation-timing-function;
+
 }
-
-
+%paddings94 {
+padding-top: 94px;
+padding-bottom: 94px;
+}
+// @extend %paddings94;

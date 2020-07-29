@@ -5,7 +5,8 @@
     
 }
 
-
+// @include centeredFlex();
+// @include centeredFlex($align-items: baseline);
 
 @mixin bordered($color) {
     border: 1px solid $color;
@@ -13,13 +14,21 @@
     border-bottom: 1px solid $color;
   }
 
-@mixin transition ($type) {
-    $animation-duration: 250ms;
-    $animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+ @mixin transition($animation-name: color, $animation-duration:  $animation-duration, $animation-timing-function: $animation-timing-function) {
+    animation-name: $animation-name;
+    animation-duration:  $animation-duration;
+     animation-timing-function: $animation-timing-function;
 
-@mixin font ($weight, $size, $height, $space) {
-    
+ }
+
+//  @include transition();
+
+@mixin fontStyle ($weight: 400, $size: 14px, $height: 1.7, $space: 0.03em) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    letter-spacing: $space;
 }
+// @include fontStyle();
 

@@ -3,6 +3,7 @@
     width: 100%;
 
     &-content {
+        
         display: flex;
         justify-content: space-between;
         align-items: baseline;
@@ -13,6 +14,10 @@
     &-list {
         padding-top: 51px;
         list-style: none;
+
+        &-list:not(:last-child) {
+            margin-right: 94px;
+        }
 
         & .button-primary {
             display: inline-flex;
@@ -125,6 +130,12 @@
     height: 24px;
     margin-left: 10px;
 
-    transition: fill $animation-duration $animation-timing-function;
+    transition: fill; @extend %transition;
+
+//  transition: fill $animation-duration $animation-timing-function;
+
+    // @include transition(fill);
 }
+
+
 

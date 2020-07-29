@@ -37,7 +37,7 @@
 
         &:hover,
         &:focus {
-        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px $shadow-black;
 
         }
     } 
@@ -102,6 +102,9 @@
         opacity: 0; 
         transform: translateY(100%); 
         
+        // @include transition($animation-name: transform);
+        // @include transition($animation-name: opacity);
+
         transition: transform $animation-duration $animation-timing-function,
         opacity $animation-duration $animation-timing-function; 
     

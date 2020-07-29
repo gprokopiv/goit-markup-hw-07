@@ -6,21 +6,14 @@
     z-index: 2; 
     border-bottom: 1px solid #ECECEC; 
    
-  
-} 
-
-   
-.header .container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    & .container {
+        @include centeredFlex();
     
-
-
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        
+    } 
 } 
 
 
@@ -29,39 +22,44 @@
     display: flex;
     margin-left: auto;
 } 
-.menu-item + .menu-item {
-    margin-left: 50px;
-}
-.menu .menu-item:first-child {
-    margin-right: 85px;
+
+.menu {
+    &-item {
+        & + & {
+            margin-left: 50px;
+        }
+        &:first-child {
+            margin-right: 85px;
+            
+            padding-top: 24px;
+            padding-bottom: 25px; 
+        }
+    }
     
-    padding-top: 24px;
-    padding-bottom: 25px; 
+    &-link {
+        position: relative;
+    
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 33px;
+        color: $primary-text-color;
+        text-decoration: none;
+    
+    
+        @include transition();
+    
+        &:hover,
+        &:focus {
+        color: $accent-color;
+    }
+    }
+    
+    
+    
 }
-.menu-link {
-    position: relative;
-
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 33px;
-    color: $primary-text-color;
-    text-decoration: none;
-
-
-    transition: color $animation-duration $animation-timing-function;
-
-    &:hover,
-    &:focus {
-    color: $accent-color;
-}
-}
-
-
 
 /* blue underline */
-.active {
-    color: $accent-color;
-}
+
 .menu-link::after,
 .active::after {
     position: absolute;
@@ -77,55 +75,72 @@
     transform: scaleX(0);
 }
 
-.menu-link::after {
-       transform: scaleX(0);
-       transition: transform $animation-duration $animation-timing-function;
-}
-.menu-link:hover::after,
-.menu-link:focus::after {
-    transform: scaleX(1);
+.menu-link {
+
+    &::after {
+        transform: scaleX(0);
+        transition: transform $animation-duration $animation-timing-function;
+        // @include transition($animation-name: scaleX(0));
+        // transform: scaleX(0);
+        // 
  }
-
-
- .active::after {
-    transform: scaleX(1);
+    &:hover::after,
+    &:focus::after {
+        transform: scaleX(1);
+    }
 }
 
 
+.active {
+    color: $accent-color;
+
+    &::after {
+        transform: scaleX(1);
+    }
+    
+}
 
 /* email and address */
+.contact {
+    &-item {
+        fill: $secondary-text-color; 
+    
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+     }
 
- .contact-item {
-    fill: $secondary-text-color; 
-
-    &:not(:last-child) {
-        margin-right: 20px;
+    &-icon {
+        vertical-align: bottom;
+        margin-right: 10px;  
+    
+    }  
+    &-link {
+        color: $secondary-text-color;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        line-height: 1.14;
+        text-decoration: none;
+    
+        transition: color $animation-duration $animation-timing-function,
+        fill $animation-duration $animation-timing-function;
+    
+    
+                &:hover,
+                &:focus {
+                color: $accent-color;
+                fill: $accent-color;
+            }
+    
     }
- }
+
+
+
+
+}
+ 
  
 
- .contact-icon {
-    vertical-align: bottom;
-    margin-right: 10px;  
-
-}  
- .contact-link {
-    color: $secondary-text-color;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    line-height: 1.14;
-    text-decoration: none;
-
-    transition: color $animation-duration $animation-timing-function,
-    fill $animation-duration $animation-timing-function;
-
-
-    &:hover,
-    &:focus {
-    color: $accent-color;
-    fill: $accent-color;
-}
-
-}
+ 
 
 

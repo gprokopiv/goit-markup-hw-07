@@ -3,12 +3,11 @@
     text-decoration: none;
     
     color: #000000;
-    font-family: $font-logo;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
 
+    font-family: $font-logo;
+    @include fontStyle($weight: 700, $size: 26px, $height: 1.2);
+
+   
 
     
 }

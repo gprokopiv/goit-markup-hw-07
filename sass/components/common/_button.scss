@@ -1,8 +1,8 @@
 
 .button-primary {
     @extend %button;
-   border: 1px solid $accent-color;
-   padding: 10px 32px;
+    border: 1px solid $accent-color;
+    padding: 10px 32px;
    
    color: $title-text-color;
    background-color: $accent-color;
@@ -14,9 +14,13 @@
    line-height: 1.8;
    letter-spacing: 0.06em;
 
-   transition: color $animation-duration $animation-timing-function,
-   border-color  $animation-duration $animation-timing-function,
-   background-color  $animation-duration $animation-timing-function;
+
+//    @include transition($animation-name: color, $animation-name: border-color,  $animation-name:  background-color);
+//   
+
+        transition: color $animation-duration $animation-timing-function,
+        border-color  $animation-duration $animation-timing-function,
+        background-color  $animation-duration $animation-timing-function;
 
    &:hover,
    &:focus {
