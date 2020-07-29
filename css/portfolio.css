@@ -253,12 +253,25 @@ summary {
   display: inline-block;
 }
 
+.icon-send {
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features .is-hidden,
 .portfolio .is-hidden {
   display: none;
 }
 
 .page {
+  padding-top: 80px;
   color: #212121;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -279,12 +292,6 @@ summary {
   width: 1200px;
 }
 
-/* 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}   */
 .list {
   list-style: none;
   padding: 0;
@@ -300,9 +307,14 @@ button:hover {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+  height: auto;
+}
+
 .portfolio .container {
-  padding-top: 94px;
-  padding-bottom: 94px;
   color: #212121;
   font-size: 16px;
 }
@@ -323,9 +335,9 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -343,7 +355,7 @@ button:hover {
   margin-left: 50px;
 }
 
-.menu .menu-item:first-child {
+.menu-item:first-child {
   margin-right: 85px;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -356,8 +368,12 @@ button:hover {
   padding-bottom: 33px;
   color: #212121;
   text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-name: color;
+          animation-name: color;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover, .menu-link:focus {
@@ -365,10 +381,6 @@ button:hover {
 }
 
 /* blue underline */
-.active {
-  color: #2196F3;
-}
-
 .menu-link::after,
 .active::after {
   position: absolute;
@@ -393,10 +405,13 @@ button:hover {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link:hover::after,
-.menu-link:focus::after {
+.menu-link:hover::after, .menu-link:focus::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+.active {
+  color: #2196F3;
 }
 
 .active::after {
@@ -489,8 +504,16 @@ button:hover {
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-name: color;
+          animation-name: color;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-name: background-color;
+          animation-name: background-color;
+  animation-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works {
@@ -640,10 +663,13 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .social .list:not(:last-child) {
@@ -654,21 +680,29 @@ button:hover {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0;
   border-radius: 50%;
   width: 44px;
   height: 44px;
   text-decoration: none;
   border: none;
   background: rgba(255, 255, 255, 0.1);
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-name: fill;
+          animation-name: fill;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-name: background-color;
+          animation-name: background-color;
+  animation-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover, .social-link:focus {
@@ -707,6 +741,10 @@ button:hover {
 .footer-list {
   padding-top: 51px;
   list-style: none;
+}
+
+.footer-list-list:not(:last-child) {
+  margin-right: 94px;
 }
 
 .footer-list .button-primary {
@@ -811,7 +849,7 @@ button:hover {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill;
+  transition: fill;
 }
 /*# sourceMappingURL=portfolio.css.map */
