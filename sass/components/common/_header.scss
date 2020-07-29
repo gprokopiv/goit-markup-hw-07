@@ -122,8 +122,12 @@
         line-height: 1.14;
         text-decoration: none;
     
-        transition: color $animation-duration $animation-timing-function,
-        fill $animation-duration $animation-timing-function;
+        @include transition();
+        @include transition($animation-name: fill);
+
+        
+        // transition: color $animation-duration $animation-timing-function,
+        // fill $animation-duration $animation-timing-function;
     
     
                 &:hover,

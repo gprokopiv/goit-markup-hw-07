@@ -253,13 +253,6 @@ summary {
   display: inline-block;
 }
 
-.icon-send {
-  -webkit-animation-duration: 250ms;
-          animation-duration: 250ms;
-  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .portfolio .container {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -434,8 +427,16 @@ img {
   padding-bottom: 32px;
   line-height: 1.14;
   text-decoration: none;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-name: color;
+          animation-name: color;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation-name: fill;
+          animation-name: fill;
+  animation-duration: 250ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover, .contact-link:focus {
@@ -844,7 +845,11 @@ img {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  -webkit-transition: fill;
-  transition: fill;
+  -webkit-animation-name: fill;
+          animation-name: fill;
+  -webkit-animation-duration: 250ms;
+          animation-duration: 250ms;
+  -webkit-animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*# sourceMappingURL=portfolio.css.map */
